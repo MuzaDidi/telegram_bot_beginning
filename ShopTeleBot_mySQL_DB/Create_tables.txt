@@ -1,0 +1,10 @@
+CREATE TABLE Users 
+(id serial,
+chatId INT UNIQUE NOT NULL,
+user_name CHAR(50) NOT NULL,
+user_firstName CHAR(50) NOT NULL,
+user_lastName CHAR(50),
+user_phone INT UNIQUE,
+user_status CHAR(20) NOT NULL,
+PRIMARY KEY (id)) 
+ENGINE = InnoDB DEFAULT CHARACTER SET = utf8mb4;
